@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+   font-weight: 300;
+   color: #111 
+}
+
+header{
+    position: fixed;
+    Top: 0%;
+    left: 0%;
+    padding: 3%;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.logo{
+    color:#fff;
+    font-weight:bold;
+    font-size: 2em;
+    text-decoration: none;
+}
+.logo span{
+    color:#fb912f
+}
+
+.navbar {
+    display:flex;
+    position: relative;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    color:brown;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: 700;
+}
+
+.btn-réservation{
+    padding: 10px 20px;
+    background: yellow;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-réservation:hover{
+    background: #fb912f;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: chocolate;
+    border-bottom: 2px solid;
+}
+
+.banniere{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-image : url(../images/charpente.jpg);
+    background-size:cover;
+}
+
+.banniere .contenu{
+    max-width: 70%;
+    align-items: center;
+}
+
+.banniere .contenu h2 {
+    color: #fff;
+    font-size: 3em;
+    text-transform: capitalize;
+}
+.contenu p:nth-child(2){
+    color:#ffffff;
+    font-size: 1.2em;
+} 
+
+.btn{
+    font-size: 1em;
+    color: black;
+    background: rgb(255, 136, 0);
+    padding: 100px 250 px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 500px;
+}
+.btn1{
+    font-size: 1em;
+    color: black;
+    background: rgb(255, 136, 0);
+    padding: 100px 100 px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 0px;
+}
+
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    background: #2a4963;
+    padding: 10px 20 px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    margin-left: 0px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+
+section{
+    padding: 100px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 48%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.titre-texte span{
+    color: #fb911f;
+    font-size: 1.5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.row .col50 img{
+    height: 750px;
+    width:500px;
+    position: relative;
+}
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photos{
+    margin-top: -100px;
+}
+
+.photos .contenu{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.photos .contenu .box{
+    width: 350px;
+    margin: 20px;
+    border: 20px solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+}
+
+.photos .contenu .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 300px;
+}
+
+.photos .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left:0;
+    width: 100%;
+    height:300px;
+    object-fit: cover;
+}
+
+.photos .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color:#111;
+}
+
+.photos .contenu .box .text .h3{
+    font-weight: 400;
+}
+
+.expert{
+    margin-top: -100px;
+}
+
+.expert .contenu{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.expert .contenu .box{
+     width: 250px;
+     margin: 15px;
+}
+
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.contact{
+    background-image: url(../images/act.png);
+    background-size: cover;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    background-position: unset;
+}
+.contactform{
+    padding:75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 38%;
+}
+
+.contactform h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+
+}
+.contactform .inputboite{
+    position:relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputboite input,
+.contactform .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding:10px;
+    color: #111;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"]{
+    font-size: 1em;
+    font-weight: 700;
+    color:#ffff;
+    background:#fb912f;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    outline:none;
+    border:none;
+    transition: 0.5s;
+    max-width: 120px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .titre-text span{
+    color: #fb912f;
+    font-size: 2em;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20 px rgba(0, 0, 0, 0.05); 
+}
+
+header.sticky .navbar li a {
+    color: #000;
+}
+
+header.sticky li a:hover{
+    color:#fb912f;
+    border-bottom: 2px solid #fb911f;
+}
+
+@media(max-width: 991px) {
+    
+    header, header.sticky{
+        padding: 10px 20px;
+    }
+    header .navbar li{
+        margin-left: 0;
+    }
+
+
+    .navbar{
+        display: none;
+    }
+    section{
+        padding: 20px;
+    }
+    .banniere .contenu h2{
+        font-size: 2em;
+    }
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+}
